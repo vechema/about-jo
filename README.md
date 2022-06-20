@@ -6,15 +6,18 @@
   * https://www.gatsbyjs.com/plugins/gatsby-theme-material-ui/
   * Broken things:
     * Title
-* Top Line - Toolbar or App bar
+* Top Line - Toolbar or AppBar
   * Left ??
   * Center - About Jo
   * Right - Github icon that links to my Github, LinkedIn icon?
-* Top(static) and side(dynamic) nav
+* Top(static) nav
+  * centered
+* Side(dynamic) nav
   * https://www.gatsbyjs.com/docs/creating-dynamic-navigation/
 * Put shell for 
   * practical/application - resume, experience, projects
   * theoretical - principals, "blog"
+    * Maybe use accordian
   * fun pages - hobby, pets
 * Fill in content
 * Add page for killer sudoku solver
