@@ -11,13 +11,18 @@
   * Center - About Jo
   * Right - Github icon that links to my Github, LinkedIn icon?
 * Top(static) nav
-  * centered
-* Side(dynamic) nav
-  * https://www.gatsbyjs.com/docs/creating-dynamic-navigation/
-* Put shell for 
+  * centered ?
+* Side(dynamic) nav for "blog"
+  * Get better icons
+* Put shell for
   * practical/application - resume, experience, projects
   * theoretical - principals, "blog"
     * Maybe use accordian
   * fun pages - hobby, pets
+* Blog
+  * BlogNav doesn't cut off picture
+  * Have "blog" selected as page in top nav
+  * Have which blog is being read selected in side nav
 * Fill in content
+  * Rename things - file names, nav, routes/links
 * Add page for killer sudoku solver

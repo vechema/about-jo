@@ -1,22 +1,16 @@
 import * as React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
+import Typography from '@mui/material/Typography';
+import BlogNav from '../../components/blogNav';
 
 const BlogPage = ({ data, location }) => {
   return (
     <Layout pageTitle="My Blog Posts" pagePath={location.pathname}>
-      {
-        data.allMdx.nodes.map(node => (
-          <article key={node.id}>
-            <h2>
-              <Link to={`/blog/${node.slug}`}>
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
-          </article>
-        ))
-      }
+      <>
+        <BlogNav />
+        <Typography>Some pearls of wisdom that I try to code by</Typography>
+      </>
     </Layout>
   )
 }

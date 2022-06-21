@@ -60,7 +60,6 @@ const Layout = ({ pageTitle, pagePath, children }: { pageTitle: string, pagePath
         setCurrentPath={setCurrentPath}
       />
       <main>
-        <h1>{pageTitle}</h1>
         {children}
       </main>
     </div>
