@@ -9,15 +9,16 @@
 * Top Line - Toolbar or AppBar
   * Left ??
   * Center - About Jo
-  * Right - Github icon that links to my Github, LinkedIn icon?
-* Top(static) nav
+  * Right - Github icon that links to my Github, LinkedIn
+* Top nav
   * centered ?
-* Side(dynamic) nav for "blog"
+* Side nav for "blog"
   * Get better icons
 * Put shell for
   * practical/application - resume, experience, projects
   * theoretical - principals, "blog"
     * Maybe use accordian
+    * Something about NFRs
   * fun pages - hobby, pets
 * Blog
   * BlogNav doesn't cut off picture

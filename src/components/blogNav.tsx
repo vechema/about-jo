@@ -8,8 +8,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import BedroomBabyIcon from '@mui/icons-material/BedroomBaby';
+import PetsIcon from '@mui/icons-material/Pets';
+import FilterVintageIcon from '@mui/icons-material/FilterVintage';
+import { SvgIconComponent } from '@mui/icons-material';
 
 const BlogNav = () => {
 
@@ -20,6 +22,7 @@ const BlogNav = () => {
           frontmatter {
             date(formatString: "MMMM D, YYYY")
             title
+            icon
           }
           id
           slug
@@ -27,6 +30,13 @@ const BlogNav = () => {
       }
     }
   `)
+
+  const icons: Record<string, SvgIconComponent> = {
+    bedroomBaby: BedroomBabyIcon,
+    pets: PetsIcon,
+    filterVintage: FilterVintageIcon
+  }
+
 
   return (
     <Drawer
@@ -37,16 +47,19 @@ const BlogNav = () => {
       <Toolbar />
       <Box sx={{ overflow: 'auto' }}>
         <List>
-          {data.allMdx.nodes.map((node, index) => (
-            <ListItem key={node.slug} disablePadding>
-              <ListItemButton LinkComponent={Link} to={`/blog/${node.slug}`}>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={node.frontmatter.title} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+          {data.allMdx.nodes.map((node, index) => {
+            const IconComponent = icons[node.frontmatter.icon]
+            return (
+              <ListItem key={node.slug} disablePadding>
+                <ListItemButton LinkComponent={Link} to={`/blog/${node.slug}`}>
+                  <ListItemIcon>
+                    <IconComponent />
+                  </ListItemIcon>
+                  <ListItemText primary={node.frontmatter.title} />
+                </ListItemButton>
+              </ListItem>
+            )
+          })}
         </List>
       </Box>
     </Drawer>
