@@ -12,8 +12,9 @@ import BedroomBabyIcon from '@mui/icons-material/BedroomBaby';
 import PetsIcon from '@mui/icons-material/Pets';
 import FilterVintageIcon from '@mui/icons-material/FilterVintage';
 import { SvgIconComponent } from '@mui/icons-material';
+import { grey } from '@mui/material/colors';
 
-const BlogNav = () => {
+const BlogNav = ({ blogTitle }: { blogTitle: string }) => {
 
   const data = useStaticQuery(graphql`
     query {
@@ -37,7 +38,6 @@ const BlogNav = () => {
     filterVintage: FilterVintageIcon
   }
 
-
   return (
     <Drawer
       variant="persistent"
@@ -49,8 +49,10 @@ const BlogNav = () => {
         <List>
           {data.allMdx.nodes.map((node, index) => {
             const IconComponent = icons[node.frontmatter.icon]
+
+            const selectedBlog = blogTitle === node.frontmatter.title ? { backgroundColor: grey[200] } : {};
             return (
-              <ListItem key={node.slug} disablePadding>
+              <ListItem key={node.slug} disablePadding sx={selectedBlog}>
                 <ListItemButton LinkComponent={Link} to={`/blog/${node.slug}`}>
                   <ListItemIcon>
                     <IconComponent />
