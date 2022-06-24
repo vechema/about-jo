@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = ({ location }) => {
   return (
-    <Layout pageTitle="Home Page" pagePath={location.pathname}>
+    <Layout pageTitle="About" pagePath={location.pathname}>
       <>
         <p>I'm making this by following the Gatsby Tutorial.</p>
         <StaticImage

@@ -3,15 +3,15 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
-import BlogNav from '../../components/blogNav'
+import TheoryNav from '../../components/theoryNav'
 
-const BlogPost = ({ data }) => {
+const TheoryPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <>
-        <BlogNav blogTitle={data.mdx.frontmatter.title} />
+        <TheoryNav theoryTitle={data.mdx.frontmatter.title} />
         <p>Posted: {data.mdx.frontmatter.date}</p>
         <GatsbyImage
           image={image}
@@ -51,4 +51,4 @@ export const query = graphql`
   }
 `
 
-export default BlogPost
+export default TheoryPost

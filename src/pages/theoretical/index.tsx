@@ -2,13 +2,13 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Typography from '@mui/material/Typography';
-import BlogNav from '../../components/blogNav';
+import TheoryNav from '../../components/theoryNav';
 
-const BlogPage = ({ data, location }) => {
+const TheoreticalPage = ({ data, location }) => {
   return (
-    <Layout pageTitle="My Blog Posts" pagePath={location.pathname}>
+    <Layout pageTitle="Thoughts" pagePath={location.pathname}>
       <>
-        <BlogNav />
+        <TheoryNav />
         <Typography>Some pearls of wisdom that I try to code by</Typography>
       </>
     </Layout>
@@ -30,4 +30,4 @@ export const query = graphql`
   }
 `
 
-export default BlogPage
+export default TheoreticalPage

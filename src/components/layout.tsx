@@ -18,9 +18,9 @@ function NavTabs({ currentPath, setCurrentPath }: { currentPath: string, setCurr
 
   return (
     <Tabs value={currentPath} onChange={handleChange}>
-      <Tab label="Home" value="/" to="/" component={GatsbyLink} />
-      <Tab label="About" value="/about" to="/about" component={GatsbyLink} />
-      <Tab label="Blog" value="/blog" to="/blog" component={GatsbyLink} />
+      <Tab label="About" value="/" to="/" component={GatsbyLink} />
+      <Tab label="Practical" value="/practical" to="/practical" component={GatsbyLink} />
+      <Tab label="Theoretical" value="/theoretical" to="/theoretical" component={GatsbyLink} />
     </Tabs>
   );
 }

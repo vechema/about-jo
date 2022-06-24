@@ -14,7 +14,7 @@ import FilterVintageIcon from '@mui/icons-material/FilterVintage';
 import { SvgIconComponent } from '@mui/icons-material';
 import { grey } from '@mui/material/colors';
 
-const BlogNav = ({ blogTitle }: { blogTitle: string }) => {
+const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
 
   const data = useStaticQuery(graphql`
     query {
@@ -50,10 +50,10 @@ const BlogNav = ({ blogTitle }: { blogTitle: string }) => {
           {data.allMdx.nodes.map((node, index) => {
             const IconComponent = icons[node.frontmatter.icon]
 
-            const selectedBlog = blogTitle === node.frontmatter.title ? { backgroundColor: grey[200] } : {};
+            const selectedTheory = theoryTitle === node.frontmatter.title ? { backgroundColor: grey[200] } : {};
             return (
-              <ListItem key={node.slug} disablePadding sx={selectedBlog}>
-                <ListItemButton LinkComponent={Link} to={`/blog/${node.slug}`}>
+              <ListItem key={node.slug} disablePadding sx={selectedTheory}>
+                <ListItemButton LinkComponent={Link} to={`/theoretical/${node.slug}`}>
                   <ListItemIcon>
                     <IconComponent />
                   </ListItemIcon>
@@ -68,4 +68,4 @@ const BlogNav = ({ blogTitle }: { blogTitle: string }) => {
   )
 }
 
-export default BlogNav
+export default TheoryNav

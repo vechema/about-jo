@@ -12,18 +12,21 @@
   * Right - Github icon that links to my Github, LinkedIn
 * Top nav
   * centered ?
-* Side nav for "blog"
+* Side nav for theoretical
   * Get better icons
 * Put shell for
   * practical/application - resume, experience, projects
-  * theoretical - principals, "blog"
+  * theoretical - principles
     * Maybe use accordian
     * Something about NFRs
   * fun pages - hobby, pets
-* Blog
-  * BlogNav doesn't cut off picture
-  * Have "blog" selected as page in top nav
-  * Have which blog is being read selected in side nav
+* Theoretical
+  * Big screen
+    * TheoryNav doesn't cut off picture/text
+  * Small screen
+    * Minimized w/ just icon showing by default
+    * Temporary drawer - darkens background when opened 
+  * Have which theory is being read selected in side nav
 * Fill in content
   * Rename things - file names, nav, routes/links
 * Add page for killer sudoku solver
