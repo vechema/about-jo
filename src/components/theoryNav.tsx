@@ -18,7 +18,7 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+      allMdx(sort: {fields: frontmatter___title, order: ASC}) {
         nodes {
           frontmatter {
             date(formatString: "MMMM D, YYYY")

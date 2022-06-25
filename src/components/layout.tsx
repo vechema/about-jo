@@ -60,7 +60,9 @@ const Layout = ({ pageTitle, pagePath, children }: { pageTitle: string, pagePath
         setCurrentPath={setCurrentPath}
       />
       <main>
-        {children}
+        <Box sx={{ p: 2 }}>
+          {children}
+        </Box>
       </main>
     </div>
   )
