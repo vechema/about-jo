@@ -23,6 +23,10 @@
     * Jo Egner, software engineer.
     * Site uses Gatsby so GraphQL & React
     * Hobbies - coding, baking, video games, knit & crochet
+* Practical
+  * Update for new job + skills
+  * Needs some serious style - don't go all the way to the edge, color, spacing
+  * Refactor - not to much copy + paste w/ Typography. Keep styling in mind
 * Theoretical
   * Big screen
     * TheoryNav doesn't cut off picture/text
@@ -33,4 +37,5 @@
   * Order theories by something other than posted date - alphabetical?
 * Fill in content
   * Rename things - file names, nav, routes/links
+* Fix all the typescript warnings
 * Add page for killer sudoku solver
