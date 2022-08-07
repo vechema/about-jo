@@ -1,41 +1,31 @@
 # About Jo
 [A website made by Jo about Jo for Jo](https://aboutjo.gtsb.io/)
 
+## To Run
+`gatsby develop`
+localhost:8000
+
 ## TODO
-* Use material UI, take out css
-  * https://www.gatsbyjs.com/plugins/gatsby-theme-material-ui/
-  * Broken things:
-    * Title
-* Top Line - Toolbar or AppBar
-  * Left ??
-  * Center - About Jo
-  * Right - Github icon that links to my Github, LinkedIn
-* Top nav
-  * centered ?
-* Side nav for theoretical
-  * Get better icons
-* Put shell for
-  * practical/application - resume, experience, projects
-  * theoretical - principles
-    * Maybe use accordian
-    * Something about NFRs
-  * fun pages - hobby, pets, about this website
-    * Jo Egner, software engineer.
-    * Site uses Gatsby so GraphQL & React
-    * Hobbies - coding, baking, video games, knit & crochet
+* Broken
+  * Title
+* About
+  * Jo Egner, software engineer
+  * Site uses Gatsby so GraphQL & React
+  * Hobbies - coding, baking, video games, knit & crochet
 * Practical
-  * Update for new job + skills
+  * Better description for WeInfuse
+  * Update skills basd on WeInfuse
   * Needs some serious style - don't go all the way to the edge, color, spacing
   * Refactor - not to much copy + paste w/ Typography. Keep styling in mind
 * Theoretical
-  * Big screen
-    * TheoryNav doesn't cut off picture/text
-  * Small screen
-    * Minimized w/ just icon showing by default
-    * Temporary drawer - darkens background when opened 
-  * Have which theory is being read selected in side nav
-  * Order theories by something other than posted date - alphabetical?
-* Fill in content
-  * Rename things - file names, nav, routes/links
+  * side nav
+    * better icons
+    * big screen
+      * doesn't overlap with screen content
+    * small screen
+      * minimized w/ just icons showing by default
+      * Temporary drawer - darkens background when opened
+  * Landing page - NFRs? Accordian of most bare bones philosophies?
 * Fix all the typescript warnings
+* Dark/light theme!
 * Add page for killer sudoku solver
