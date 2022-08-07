@@ -8,9 +8,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import BedroomBabyIcon from '@mui/icons-material/BedroomBaby';
-import PetsIcon from '@mui/icons-material/Pets';
-import FilterVintageIcon from '@mui/icons-material/FilterVintage';
+import ChromeReaderModeIcon from '@mui/icons-material/ChromeReaderMode';
+import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
+import ConstructionIcon from '@mui/icons-material/Construction';
 import { SvgIconComponent } from '@mui/icons-material';
 import { grey } from '@mui/material/colors';
 
@@ -21,7 +21,7 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
       allMdx(sort: {fields: frontmatter___title, order: ASC}) {
         nodes {
           frontmatter {
-            date(formatString: "MMMM D, YYYY")
+            posted_date(formatString: "MMMM D, YYYY")
             title
             icon
           }
@@ -33,9 +33,9 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
   `)
 
   const icons: Record<string, SvgIconComponent> = {
-    bedroomBaby: BedroomBabyIcon,
-    pets: PetsIcon,
-    filterVintage: FilterVintageIcon
+    chromeReaderMode: ChromeReaderModeIcon,
+    circleOutlined: CircleOutlinedIcon,
+    construction: ConstructionIcon
   }
 
   return (

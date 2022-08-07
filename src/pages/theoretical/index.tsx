@@ -17,10 +17,10 @@ const TheoreticalPage = ({ data, location }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    allMdx(sort: {fields: frontmatter___posted_date, order: DESC}) {
       nodes {
         frontmatter {
-          date(formatString: "MMMM D, YYYY")
+          posted_date(formatString: "MMMM D, YYYY")
           title
         }
         id

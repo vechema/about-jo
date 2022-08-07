@@ -3,13 +3,15 @@
 
 ## To Run
 `gatsby develop`
+
 localhost:8000
 
 ## TODO
 * Broken
   * Title
+  * If refresh on practical or theoretical page, underline in nav is missing
 * About
-  * Jo Egner, software engineer
+  * Jo Egner, software engineer, hotel art vs mona lisa if I can make it not sound terrible
   * Site uses Gatsby so GraphQL & React
   * Hobbies - coding, baking, video games, knit & crochet
 * Practical

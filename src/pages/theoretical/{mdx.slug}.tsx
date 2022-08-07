@@ -13,7 +13,7 @@ const TheoryPost = ({ data }) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <>
         <TheoryNav theoryTitle={data.mdx.frontmatter.title} />
-        <Typography>Posted: {data.mdx.frontmatter.date}</Typography>
+        <Typography>Posted: {data.mdx.frontmatter.posted_date}</Typography>
         <GatsbyImage
           image={image}
           alt={data.mdx.frontmatter.hero_image_alt}
@@ -38,7 +38,7 @@ export const query = graphql`
       body
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        posted_date(formatString: "MMMM DD, YYYY")
         hero_image_alt
         hero_image_credit_link
         hero_image_credit_text
