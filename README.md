@@ -21,7 +21,6 @@ localhost:8000
   * Refactor - not to much copy + paste w/ Typography. Keep styling in mind
 * Theoretical
   * side nav
-    * better icons
     * big screen
       * doesn't overlap with screen content
     * small screen

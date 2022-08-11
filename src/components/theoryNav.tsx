@@ -9,8 +9,12 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ChromeReaderModeIcon from '@mui/icons-material/ChromeReaderMode';
-import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
+import CircleIcon from '@mui/icons-material/Circle';
 import ConstructionIcon from '@mui/icons-material/Construction';
+import EditOffIcon from '@mui/icons-material/EditOff';
+import FactCheckIcon from '@mui/icons-material/FactCheck';
+import ReportProblemIcon from '@mui/icons-material/ReportProblem';
+import StorageIcon from '@mui/icons-material/Storage';
 import { SvgIconComponent } from '@mui/icons-material';
 import { grey } from '@mui/material/colors';
 
@@ -34,8 +38,12 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
 
   const icons: Record<string, SvgIconComponent> = {
     chromeReaderMode: ChromeReaderModeIcon,
-    circleOutlined: CircleOutlinedIcon,
-    construction: ConstructionIcon
+    circle: CircleIcon,
+    construction: ConstructionIcon,
+    editOff: EditOffIcon,
+    factCheck: FactCheckIcon,
+    storage: StorageIcon,
+    reportProblem: ReportProblemIcon
   }
 
   return (
