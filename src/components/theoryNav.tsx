@@ -15,8 +15,10 @@ import EditOffIcon from '@mui/icons-material/EditOff';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 import StorageIcon from '@mui/icons-material/Storage';
+import MenuIcon from '@mui/icons-material/Menu';
 import { SvgIconComponent } from '@mui/icons-material';
 import { grey } from '@mui/material/colors';
+import { IconButton } from '@mui/material';
 
 const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
 
@@ -46,13 +48,30 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
     reportProblem: ReportProblemIcon
   }
 
+  const [open, setOpen] = React.useState(true);
+
   return (
     <Drawer
-      variant="persistent"
+      variant='permanent'
       open={true}
       anchor="right"
+      PaperProps={{
+        sx: {
+          width: open ? 200 : 55,
+          transition: "width 1s",
+          whiteSpace: 'nowrap',
+          overflowX: 'hidden' // This is supposed to remove the horizontal scroll bar
+        },
+        elevation: 3
+      }}
     >
-      <Toolbar />
+      <Box sx={{ p: 1, display: "flex", justifyContent: "flex-end" }}>
+        <IconButton
+          onClick={() => { setOpen((prevOpen) => !prevOpen) }}
+        >
+          <MenuIcon />
+        </IconButton>
+      </Box>
       <Box sx={{ overflow: 'auto' }}>
         <List>
           {data.allMdx.nodes.map((node, index) => {
@@ -66,6 +85,8 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
                     <IconComponent />
                   </ListItemIcon>
                   <ListItemText primary={node.frontmatter.title} />
+                  {/* <ListItemText primary={open && node.frontmatter.title || '‎ '} /> */}
+                  {/* {open && <ListItemText primary={node.frontmatter.title} />} */}
                 </ListItemButton>
               </ListItem>
             )
