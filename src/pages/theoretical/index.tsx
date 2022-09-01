@@ -16,11 +16,11 @@ const TheoreticalPage = ({ data, location }) => {
         <List>
           <ListItem>Simplicity (Simple vs Easy)</ListItem>
           <ListItem>Maintainability</ListItem>
-          <ListItem>Readability</ListItem>
+          <ListItem>Readability, explicit</ListItem>
           <ListItem>Testability</ListItem>
-          <ListItem>Idempotency</ListItem>
-          <ListItem>Proper abstaction, modularity, single responsibility</ListItem>
-          <ListItem>Repeatability - Cattle, not pets</ListItem>
+          <ListItem>Idempotency, Reversibility</ListItem>
+          <ListItem>Proper abstaction, modularity, single responsibility, demeter, Composition over Inheritance, loose coupling</ListItem>
+          <ListItem>Repeatability - Cattle, not pets, deterministic</ListItem>
         </List>
 
         <Typography variant='h3'>Functional Programming</Typography>
@@ -39,8 +39,8 @@ const TheoreticalPage = ({ data, location }) => {
           <ListItem>Create new better, replace old later/maybe never</ListItem>
           <ListItem>Synchronous</ListItem>
           <ListItem>Measure everything</ListItem>
-          <ListItem>Premature optimization</ListItem>
-          <ListItem>Composition over Inheritance</ListItem>
+          <ListItem>Premature optimization - NO</ListItem>
+          <ListItem>If it can happen, it will happen</ListItem>
         </List>
       </>
     </Layout>
