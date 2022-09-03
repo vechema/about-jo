@@ -20,7 +20,7 @@ import { SvgIconComponent } from '@mui/icons-material';
 import { grey } from '@mui/material/colors';
 import { IconButton } from '@mui/material';
 
-const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
+const TheoryNav = ({ theoryTitle, open, setOpen }: { theoryTitle: string, open: boolean }) => {
 
   const data = useStaticQuery(graphql`
     query {
@@ -48,8 +48,6 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
     reportProblem: ReportProblemIcon
   }
 
-  const [open, setOpen] = React.useState(true);
-
   return (
     <Drawer
       variant='permanent'
@@ -67,7 +65,7 @@ const TheoryNav = ({ theoryTitle }: { theoryTitle: string }) => {
     >
       <Box sx={{ p: 1, display: "flex", justifyContent: "flex-end" }}>
         <IconButton
-          onClick={() => { setOpen((prevOpen) => !prevOpen) }}
+          onClick={() => { setOpen((prevOpen: boolean) => !prevOpen) }}
         >
           <MenuIcon />
         </IconButton>
