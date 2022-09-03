@@ -10,10 +10,10 @@ import { Box } from '@mui/material';
 const TheoryPost = ({ data, location }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
 
-  const [open, setOpen] = React.useState(JSON.parse(window.localStorage.getItem('theoryNavOpen')));
+  const [open, setOpen] = React.useState(JSON.parse(window?.localStorage.getItem('theoryNavOpen')));
 
   React.useEffect(() => {
-    window.localStorage.setItem('theoryNavOpen', open);
+    window?.localStorage.setItem('theoryNavOpen', open);
   }, [open]);
 
   return (
