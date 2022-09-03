@@ -7,7 +7,12 @@ import { Box, List, ListItem } from '@mui/material';
 
 const TheoreticalPage = ({ data, location }) => {
 
-  const [open, setOpen] = React.useState(JSON.parse(window?.localStorage.getItem('theoryNavOpen')));
+  let tempOpen = true;
+  if (typeof window !== `undefined`) {
+    tempOpen = JSON.parse(window?.localStorage.getItem('theoryNavOpen'));
+  }
+
+  const [open, setOpen] = React.useState(tempOpen);
 
   React.useEffect(() => {
     window?.localStorage.setItem('theoryNavOpen', open);
