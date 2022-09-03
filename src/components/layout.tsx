@@ -16,8 +16,12 @@ function NavTabs({ currentPath, setCurrentPath }: { currentPath: string, setCurr
     setCurrentPath(newPath);
   };
 
+  const indexOfSecondSlash = currentPath.indexOf("/", 1)
+  const substringEndIndex = indexOfSecondSlash > 0 ? indexOfSecondSlash : currentPath.length;
+  const path = currentPath.substring(0, substringEndIndex);
+
   return (
-    <Tabs value={currentPath} onChange={handleChange}>
+    <Tabs value={path} onChange={handleChange}>
       <Tab label="About" value="/" to="/" component={GatsbyLink} />
       <Tab label="Practical" value="/practical" to="/practical" component={GatsbyLink} />
       <Tab label="Theoretical" value="/theoretical" to="/theoretical" component={GatsbyLink} />

@@ -6,7 +6,6 @@ import Layout from '../components/layout'
 
 const PracticalPage = ({ location }) => {
   const theme = useTheme();
-  console.log(theme.palette.primary)
   return (
     <Layout pageTitle="Real World Experience" pagePath={location.pathname}>
       <Box sx={{

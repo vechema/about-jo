@@ -7,7 +7,12 @@ import { Box, List, ListItem } from '@mui/material';
 
 const TheoreticalPage = ({ data, location }) => {
 
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(JSON.parse(window.localStorage.getItem('theoryNavOpen')));
+
+  React.useEffect(() => {
+    window.localStorage.setItem('theoryNavOpen', open);
+  }, [open]);
+
   return (
     <Layout pageTitle="Thoughts" pagePath={location.pathname}>
       <>

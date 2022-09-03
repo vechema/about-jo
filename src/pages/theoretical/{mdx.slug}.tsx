@@ -7,13 +7,17 @@ import TheoryNav from '../../components/theoryNav'
 import { Typography } from '@mui/material'
 import { Box } from '@mui/material';
 
-const TheoryPost = ({ data }) => {
+const TheoryPost = ({ data, location }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
 
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(JSON.parse(window.localStorage.getItem('theoryNavOpen')));
+
+  React.useEffect(() => {
+    window.localStorage.setItem('theoryNavOpen', open);
+  }, [open]);
 
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout pageTitle={data.mdx.frontmatter.title} pagePath={location.pathname}>
       <>
         <TheoryNav
           theoryTitle={data.mdx.frontmatter.title}
