@@ -50,10 +50,14 @@ const TheoreticalPage = ({ data, location }) => {
             <ListItem>Problem first, solution after</ListItem>
             <ListItem>Strong opinions, weakly held</ListItem>
             <ListItem>Create new better, replace old later/maybe never</ListItem>
-            <ListItem>Synchronous</ListItem>
+            <ListItem>Synchronous & Undistributed</ListItem>
             <ListItem>Measure everything</ListItem>
             <ListItem>Premature optimization - NO</ListItem>
             <ListItem>If it can happen, it will happen</ListItem>
+            <ListItem>Revert, don't hot patch</ListItem>
+            <ListItem>Types of data - historical, current, event</ListItem>
+            <ListItem>Always save sent & recieved message. Denormalize out what will be used</ListItem>
+            <ListItem>Ruthless prioritization, MVP, tiny stories</ListItem>
           </List>
         </Box>
       </>

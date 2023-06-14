@@ -1,10 +1,13 @@
 # About Jo
 [A website made by Jo about Jo for Jo](https://aboutjo.gtsb.io/)
+[Gatsby Deploys](www.gatsbyjs.com)
+[GitHub Repo](https://github.com/vechema/about-jo)
 
 ## To Run
 `gatsby develop`
 
 localhost:8000
+http://localhost:8000/__graphql
 
 ## TODO
 * Broken
@@ -16,7 +19,7 @@ localhost:8000
   * Hobbies - coding, baking, video games, knit & crochet
 * Practical
   * Better description for WeInfuse
-  * Update skills basd on WeInfuse
+  * Update skills based on WeInfuse
   * Needs some serious style - don't go all the way to the edge, color, spacing
   * Refactor - not to much copy + paste w/ Typography. Keep styling in mind
 * Theoretical
