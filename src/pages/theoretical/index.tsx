@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Typography from '@mui/material/Typography';
 import TheoryNav from '../../components/theoryNav';
-import { Box, List, ListItem } from '@mui/material';
+import { Box, Link, List, ListItem } from '@mui/material';
 
 const TheoreticalPage = ({ data, location }) => {
 
@@ -27,13 +27,17 @@ const TheoreticalPage = ({ data, location }) => {
 
           <Typography variant="h3">Non Functional Requirements</Typography>
           <List>
-            <ListItem>Simplicity (Simple vs Easy)</ListItem>
+            <ListItem>
+              <Link href="/theoretical/simplicity">Simplicity (Simple vs Easy)</Link>
+            </ListItem>
             <ListItem>Maintainability</ListItem>
             <ListItem>Readability, explicit</ListItem>
             <ListItem>Testability</ListItem>
             <ListItem>Idempotency, Reversibility</ListItem>
             <ListItem>Proper abstaction, modularity, single responsibility, demeter, Composition over Inheritance, loose coupling</ListItem>
             <ListItem>Repeatability - Cattle, not pets, deterministic</ListItem>
+            <ListItem>Developer Experience</ListItem>
+            <ListItem>Limited Blast Radius</ListItem>
           </List>
 
           <Typography variant='h3'>Functional Programming</Typography>

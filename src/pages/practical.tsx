@@ -27,7 +27,9 @@ const PracticalPage = ({ location }) => {
             <Typography variant="h5">Lead Software Engineer</Typography>
             <Typography variant="h6">October 2021 - Present</Typography>
             <Typography>
-              Lead architect and develop of greenfield medical claims project
+              Lead architect and developer of greenfield medical claims project
+              Establish best practices in React, Ruby on Rails, and communication between the two
+              Process millions of dollars per month in medical claims
             </Typography>
 
             <Typography variant="h5">Senior Software Engineer</Typography>
@@ -101,19 +103,19 @@ const PracticalPage = ({ location }) => {
             <Typography variant="h3">Skills</Typography>
             <Typography variant="h4">Languages</Typography>
             <Typography variant="h5">
-              Java, Python, Bash, Javascript, Rust, C, C++
+              Ruby, Javascript, Java, Python, Bash, Rust, C, C++
             </Typography>
             <Typography variant="h4">Tools</Typography>
             <Typography variant="h5">
-              Docker, Git, Jenkins, CI, Maven, Google Cloud Platform, Micrometer, JFR, JMH, JUnit, TestNG
+              Docker, Git, Jenkins, CI, Maven, Google Cloud Platform, Minitest, Micrometer, JFR, JMH, JUnit, TestNG
             </Typography>
             <Typography variant="h4">Paradigms</Typography>
             <Typography variant="h5">
-              Object Oriented Programming, Functional Programming, Test Driven Development, Agile
+              Object Oriented Programming, Functional Programming, Entity Compontent System, REST, Test Driven Development, Agile
             </Typography>
             <Typography variant="h4">Miscellanous</Typography>
             <Typography variant="h5">
-              Spring Boot, OpenTelemetry, REST, Batch, Batch Scheduling
+              Ruby on Rails, React, Material UI, Spring Boot, OpenTelemetry, Batch, Batch Scheduling
             </Typography>
           </Grid>
         </Grid>

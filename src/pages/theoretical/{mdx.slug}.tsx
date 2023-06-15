@@ -29,18 +29,9 @@ const TheoryPost = ({ data, location }) => {
           open={open}
           setOpen={setOpen}
         />
+        <Typography variant='h3'>{data.mdx.frontmatter.title}</Typography>
         <Box sx={{ marginRight: open ? 25 : 7, transition: "margin 1s" }}>
           <Typography>Posted: {data.mdx.frontmatter.posted_date}</Typography>
-          <GatsbyImage
-            image={image}
-            alt={data.mdx.frontmatter.hero_image_alt}
-          />
-          <Typography>
-            Photo Credit:{" "}
-            <a href={data.mdx.frontmatter.hero_image_credit_link}>
-              {data.mdx.frontmatter.hero_image_credit_text}
-            </a>
-          </Typography>
           <MDXRenderer>
             {data.mdx.body}
           </MDXRenderer>
@@ -57,14 +48,6 @@ export const query = graphql`
       frontmatter {
         title
         posted_date(formatString: "MMMM DD, YYYY")
-        hero_image_alt
-        hero_image_credit_link
-        hero_image_credit_text
-        hero_image {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
     }
   }
