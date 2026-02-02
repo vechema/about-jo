@@ -34,3 +34,16 @@ http://localhost:8000/__graphql
 * Fix all the typescript warnings
 * Dark/light theme!
 * Add page for killer sudoku solver
+ * Suggestions for box combinations - and keep track of which ones crossed out
+  * Freeform suggestion - but in any number & amount of cells to see suggestions
+ * Sum highlighted boxes
+  * Add/substract increments of 45 from aggregations
+ * Show errors - ideally after a bit of a delay or single key stroke toggle
+  * Not possible w/ currently displayed numbers error
+  * Not the actual answer error
+ * Cell can hold options and can check that answer is in those options (show errors)
+  * Key to remove numbers that are not possible from options due to placed big numbers
+  * Mark a number NOT an option
+ * Trial/testing mode - going to add things as a test and reset to a certain, specified point after
+ * Next move suggestion/hint and why
+ * Format to export & import existing sudokus

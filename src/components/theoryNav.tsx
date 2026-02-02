@@ -8,6 +8,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import AutoModeIcon from '@mui/icons-material/AutoMode';
 import ChromeReaderModeIcon from '@mui/icons-material/ChromeReaderMode';
 import CircleIcon from '@mui/icons-material/Circle';
 import ConstructionIcon from '@mui/icons-material/Construction';
@@ -39,6 +40,7 @@ const TheoryNav = ({ theoryTitle, open, setOpen }: { theoryTitle: string, open: 
   `)
 
   const icons: Record<string, SvgIconComponent> = {
+    autoMode: AutoModeIcon,
     chromeReaderMode: ChromeReaderModeIcon,
     circle: CircleIcon,
     construction: ConstructionIcon,
