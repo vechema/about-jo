@@ -28,12 +28,14 @@ const TheoreticalPage = ({ data, location }) => {
           <Typography variant="h3">Non Functional Requirements</Typography>
           <List>
             <ListItem>
+              {/* TODO: Use gatsby link */}
               <Link href="/theoretical/simplicity">Simplicity (Simple vs Easy)</Link>
             </ListItem>
             <ListItem>Maintainability</ListItem>
             <ListItem>Readability, explicit</ListItem>
             <ListItem>Testability</ListItem>
-            <ListItem>Idempotency, Reversibility</ListItem>
+            <ListItem>Idempotency</ListItem>
+            <ListItem>Reversibility</ListItem>
             <ListItem>Proper abstaction, modularity, single responsibility, demeter, Composition over Inheritance, loose coupling</ListItem>
             <ListItem>Repeatability - Cattle, not pets, deterministic</ListItem>
             <ListItem>Developer Experience</ListItem>
@@ -57,11 +59,13 @@ const TheoreticalPage = ({ data, location }) => {
             <ListItem>Synchronous & Undistributed</ListItem>
             <ListItem>Measure everything</ListItem>
             <ListItem>Premature optimization - NO</ListItem>
-            <ListItem>If it can happen, it will happen</ListItem>
+            <ListItem>If it can happen, it will happen - date validation, limit queries, db failure</ListItem>
             <ListItem>Revert, don't hot patch</ListItem>
             <ListItem>Types of data - historical, current, event</ListItem>
             <ListItem>Always save sent & recieved message. Denormalize out what will be used</ListItem>
             <ListItem>Ruthless prioritization, MVP, tiny stories</ListItem>
+            <ListItem>Reasonable defaults, NOT null</ListItem>
+            <ListItem>Two kind sof persisted data - blue prints/current and historical</ListItem>
           </List>
         </Box>
       </>
